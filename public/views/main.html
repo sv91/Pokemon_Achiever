@@ -1,0 +1,7 @@
+<div class="text-center container" id="main-menu">
+  <a ui-sref-active="active" ui-sref=".general">Main</a>
+  <a ng-repeat="selected in data.selected_games" ui-sref-active="active" ui-sref=".selected">{{selected.name}}</a>
+</div>
+
+<div id="form-views" ui-view>
+</div>
